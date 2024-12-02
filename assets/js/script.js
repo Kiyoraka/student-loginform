@@ -1,22 +1,3 @@
-// Theme toggling functionality
-function toggleTheme() {
-    const body = document.body;
-    const themeIcon = document.querySelector('.theme-toggle i');
-    
-    if (body.getAttribute('data-theme') === 'dark') {
-        body.removeAttribute('data-theme');
-        themeIcon.classList.remove('fa-moon');
-        themeIcon.classList.add('fa-sun');
-    } else {
-        body.setAttribute('data-theme', 'dark');
-        themeIcon.classList.remove('fa-sun');
-        themeIcon.classList.add('fa-moon');
-    }
-    
-    // Save theme preference
-    localStorage.setItem('theme', body.getAttribute('data-theme') || 'light');
-}
-
 // Password visibility toggle
 function togglePassword() {
     const passwordInput = document.getElementById('password');
@@ -67,15 +48,3 @@ function validateForm() {
 
     return false; // Prevent form submission for this demo
 }
-
-// Load saved theme preference
-document.addEventListener('DOMContentLoaded', () => {
-    const savedTheme = localStorage.getItem('theme');
-    const themeIcon = document.querySelector('.theme-toggle i');
-    
-    if (savedTheme === 'dark') {
-        document.body.setAttribute('data-theme', 'dark');
-        themeIcon.classList.remove('fa-sun');
-        themeIcon.classList.add('fa-moon');
-    }
-});

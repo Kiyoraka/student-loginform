@@ -1,0 +1,242 @@
+:root {
+    /* Light theme variables */
+    --bg-color: #f0f2f5;
+    --form-bg: #ffffff;
+    --text-color: #333333;
+    --input-bg: #f5f6f8;
+    --input-border: #e1e4e8;
+    --primary-color: #4c1dae;
+    --hover-color: #3a1685;
+    --error-color: #dc3545;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] {
+    /* Dark theme variables */
+    --bg-color: #1a1a1a;
+    --form-bg: #2d2d2d;
+    --text-color: #ffffff;
+    --input-bg: #3d3d3d;
+    --input-border: #4d4d4d;
+    --primary-color: #8c5cf5;
+    --hover-color: #724bc8;
+    --error-color: #ff4d4d;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    position: relative;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.form-container {
+    background-color: var(--form-bg);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px var(--shadow-color);
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: var(--text-color);
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.form-header p {
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.input-field i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-color);
+    opacity: 0.5;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 15px 45px;
+    border: 1px solid var(--input-border);
+    border-radius: 10px;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.input-field input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.password-toggle {
+    left: unset !important;
+    right: 15px;
+    cursor: pointer;
+}
+
+.error-message {
+    color: var(--error-color);
+    font-size: 0.875rem;
+    display: block;
+    margin-top: 5px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+
+.forgot-password {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.login-btn:hover {
+    background-color: var(--hover-color);
+}
+
+.additional-options {
+    text-align: center;
+    color: var(--text-color);
+}
+
+.additional-options a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.additional-options a:hover {
+    text-decoration: underline;
+}
+
+.help {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.help i {
+    color: var(--primary-color);
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .form-container {
+        padding: 30px 20px;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .input-field input {
+        padding: 12px 40px;
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-container {
+    animation: fadeIn 0.5s ease-out;
+}

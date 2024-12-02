@@ -1,13 +1,12 @@
 # Student Login Form 🎓
 
-A modern, responsive student login interface with theme switching capabilities and form validation.
+A modern, responsive student login interface with form validation.
 
 ![Student Login Preview](assets/img/preview.png)
 
 ## ✨ Features
 
 - Responsive design for all devices
-- Light/Dark theme toggle
 - Form validation
 - Password visibility toggle
 - Remember me functionality
@@ -140,11 +139,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙋‍♂️ Support
 
-For support, email [your-email@example.com](mailto:your-email@example.com) or open an issue in the repository.
-
-## 👥 Authors
-
-- **Your Name** - *Initial work* - [Your GitHub Profile](https://github.com/yourusername)
+For support, open an issue in the repository.
 
 ## 🙏 Acknowledgments
 
@@ -152,8 +147,3 @@ For support, email [your-email@example.com](mailto:your-email@example.com) or op
 - Modern form design inspiration
 - Community feedback and contributions
 
----
-
-Made with ❤️ by [Your Name]
-
-[Live Demo](your-demo-link) | [Report Bug](your-repo-link/issues) | [Request Feature](your-repo-link/issues)

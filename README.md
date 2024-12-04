@@ -119,23 +119,8 @@ function validateForm() {
 
 ## 📝 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project open source
 
-## 🔄 Planned Updates
-
-- [ ] Social media login integration
-- [ ] Password strength indicator
-- [ ] Two-factor authentication
-- [ ] Remember me functionality
-- [ ] Password reset flow
-- [ ] Registration form
-- [ ] API integration
-
-## 🐛 Known Issues
-
-- Form submission is currently simulated
-- Remember me functionality needs backend integration
-- Password reset flow not implemented
 
 ## 🙋‍♂️ Support
 
@@ -145,5 +130,5 @@ For support, open an issue in the repository.
 
 - Font Awesome for icons
 - Modern form design inspiration
-- Community feedback and contributions
+
 

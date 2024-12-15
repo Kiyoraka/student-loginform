@@ -96,11 +96,6 @@ function validateForm() {
 }
 ```
 
-## 📱 Responsive Design
-
-- Desktop optimized (>1024px)
-- Tablet friendly (768px - 1024px)
-- Mobile responsive (<768px)
 
 ## ⚙️ Browser Support
 
@@ -122,13 +117,6 @@ function validateForm() {
 This project open source
 
 
-## 🙋‍♂️ Support
 
-For support, open an issue in the repository.
-
-## 🙏 Acknowledgments
-
-- Font Awesome for icons
-- Modern form design inspiration
 
 
